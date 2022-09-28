@@ -2,14 +2,15 @@ import React from 'react';
 import './FoodDetail.css'
 
 const FoodDetail = (props) => {
-    const {cart} = props;
+    const cart = props.cart;
+    // const {cart} = props;
     console.log(cart)
-    const {strCategoryThumb} = cart;
+    // const {strCategoryThumb} = cart;
 
-    let name = '';
-    for(const food of cart){
-        name = name + ' ' + food.strCategory + ','
-    }
+    // let name = '';
+    // for(const food of cart){
+    //     name = name + ' ' + food.strCategory + ','
+    // }
 
     // let photo = '';
     // for(const food of cart){
@@ -20,10 +21,9 @@ const FoodDetail = (props) => {
     return (
         <div className='food-detail'>
             <h4>Food detail: {cart.length}</h4>
-            {/* <p>{cart.length}</p> */}
-            {/* <img src={photo} alt="photo"/> */}
-            <p>Name: {name}</p>
-            {/* <img src={strCategoryThumb} alt="photo"/> */}
+            {
+                cart.map(ct => <><img style={{width:'100px'}} src={ct.strCategoryThumb} alt=""/> Name:{ct.strCategory}</>)
+            }
         </div>
     );
 };

@@ -7,9 +7,9 @@ const SingleFood = (props) => {
     return (
         <div className='single-food'>
             <p>id: {idCategory}</p>
-            <img src={strCategoryThumb} alt="photo"/>
+            <img src={strCategoryThumb} alt=""/>
             <h2>name: {strCategory}</h2>
-            <button onClick={()=> handleAddToCart(food)} className='btn-info' type="">More Detail</button>
+            <button onClick={()=> handleAddToCart(food)} className='btn-info' type="">Select Item</button>
         </div>
     );
 };
