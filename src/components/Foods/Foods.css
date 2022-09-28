@@ -1,0 +1,12 @@
+.foods-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.food-history{
+    background: lightblue;
+    text-align: center;
+}
+.food-info{
+    background: lightgreen;
+    text-align: center;
+}

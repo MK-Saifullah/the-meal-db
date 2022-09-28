@@ -1,0 +1,13 @@
+.nav {
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 70px;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}

@@ -1,0 +1,10 @@
+.single-food{
+    border: 1px solid gold;
+    background: orange;
+}
+.btn-info{
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid orange;
+    margin-bottom: 20px;
+}

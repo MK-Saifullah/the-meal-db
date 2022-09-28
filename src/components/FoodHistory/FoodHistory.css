@@ -1,0 +1,8 @@
+.food-history{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
